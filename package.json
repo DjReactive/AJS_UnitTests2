@@ -1,0 +1,33 @@
+{
+  "name": "ajs_tests",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DjReactive/AJS_UnitTests.git"
+  },
+  "author": "djreactive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DjReactive/AJS_UnitTests/issues"
+  },
+  "homepage": "https://github.com/DjReactive/AJS_UnitTests#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.2",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "jest": "^27.4.3"
+  },
+  "dependencies": {
+    "core-js": "^3.19.2"
+  }
+}
