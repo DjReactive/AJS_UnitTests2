@@ -4,6 +4,18 @@ test('Статус жизней (X>50)', () => expect(healthStatus('Маг', 90)
 test('Статус жизней (15<X<50)', () => expect(healthStatus('Лучник', 45)).toBe('wounded'));
 test('Статус жизней (X<15)', () => expect(healthStatus('Мечник', 10)).toBe('critical'));
 
+test('Сортировка героев (toBe)', () => {
+  expect(sortHeroes([
+    {name: 'мечник', health: 10},
+    {name: 'маг', health: 100},
+    {name: 'лучник', health: 80},
+])).toBe([
+    {name: 'маг', health: 100},
+    {name: 'лучник', health: 80},
+    {name: 'мечник', health: 10},
+  ]);
+});
+
 test('Сортировка героев', () => {
   expect(sortHeroes([
     {name: 'мечник', health: 10},
