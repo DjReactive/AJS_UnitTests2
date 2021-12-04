@@ -9,7 +9,7 @@ test('Сортировка героев (toBe)', () => {
     {name: 'мечник', health: 10},
     {name: 'маг', health: 100},
     {name: 'лучник', health: 80},
-])).toBe([
+])).not.toBe([
     {name: 'маг', health: 100},
     {name: 'лучник', health: 80},
     {name: 'мечник', health: 10},
